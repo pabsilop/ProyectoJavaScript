@@ -1,0 +1,19 @@
+{
+  "name": "proyectojavascript",
+  "version": "1.0.0",
+  "description": "Proyecto JavaScript vehiculos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pabsilop/ProyectoJavaScript.git"
+  },
+  "author": "Pablo Silva López",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pabsilop/ProyectoJavaScript/issues"
+  },
+  "homepage": "https://github.com/pabsilop/ProyectoJavaScript#readme"
+}
