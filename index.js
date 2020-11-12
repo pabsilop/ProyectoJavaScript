@@ -25,11 +25,12 @@ switch (opt) {
 
     case '1':
         
-        let opt2 = readline.question('|1 - Depositar Vehículo|')
+        let opt2 = readline.question('|1 - Depositar Vehiculo|')
 
         switch (opt2) {
             case '1':
-                console.log(User.imprimirPlazasDisponibles(parking))
+                console.log(imprimirPlazasDisponibles(parking));
+               
                 break;
             case '2':
 

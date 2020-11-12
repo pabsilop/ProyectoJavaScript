@@ -1,6 +1,5 @@
 import {tipoVehiculo} from '../modelos/tipoVehiculo.js';
 
-
 let numTurismos=0;
 let numCaravanas=0;
 let numMotocicletas=0;
@@ -26,4 +25,4 @@ function imprimirPlazasDisponibles(parking){
     return `Plazas de Turismos = ${numTurismos} || Plazas de Motocicletas = ${numMotocicletas} || Plazas de Caravanas = ${numCaravanas}`;
 }
 
-export {contarPlazasDisponibles, imprimirPlazasDisponibles};
+export {depositarVehiculo, contarPlazasDisponibles, imprimirPlazasDisponibles};
