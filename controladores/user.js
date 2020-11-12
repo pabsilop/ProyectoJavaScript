@@ -1,4 +1,5 @@
-const tipoVehiculo = require('../modelos/tipoVehiculo');
+import {tipoVehiculo} from '../modelos/tipoVehiculo.js';
+
 
 let numTurismos=0;
 let numCaravanas=0;
@@ -25,4 +26,4 @@ function imprimirPlazasDisponibles(parking){
     return `Plazas de Turismos = ${numTurismos} || Plazas de Motocicletas = ${numMotocicletas} || Plazas de Caravanas = ${numCaravanas}`;
 }
 
-module.exports = {contarPlazasDisponibles : contarPlazasDisponibles, imprimirPlazasDisponibles: imprimirPlazasDisponibles};
+export {contarPlazasDisponibles, imprimirPlazasDisponibles};

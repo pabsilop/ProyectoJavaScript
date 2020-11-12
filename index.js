@@ -1,56 +1,52 @@
 //Se importan las clases
-const readline = require('readline');
-const Plaza = require('./modelos/plaza');
-const tipoVehiculo = require('./modelos/tipoVehiculo');
-const Datos = require('./repositorio/datos');
-const User = require('./controladores/user');
-const Admin = require('./controladores/admin');
-const Parking = require('./modelos/parking');
-const Ticket = require('./modelos/ticket');
-const user = require('./controladores/user');
+import * as readline from 'readline-sync';
+//const Plaza = require('./modelos/plaza');
+import {Plaza} from './modelos/plaza.js';
+//const tipoVehiculo = require('./modelos/tipoVehiculo');
+import {tipoVehiculo} from './modelos/tipoVehiculo.js';
+//const Datos = require('./repositorio/datos');
+import {createParking} from './repositorio/datos.js';
+//const User = require('./controladores/user');
+import {contarPlazasDisponibles, imprimirPlazasDisponibles} from './controladores/user.js';
+//const Parking = require('./modelos/parking');
+import {Parking} from './modelos/parking.js';
+//const Ticket = require('./modelos/ticket');
+import {Ticket} from './modelos/ticket.js';
+
+
 //Se inicializan los datos.
-let parking = Datos.createParking();
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+let parking = createParking();
 
-let opt = 0;
-let op2 = 0;
-
-function setOpt(inputOpt){
-    opt = inputOpt
-}
-
-function main(){
+let opt = readline.question('|1 - Zona Usuario| |2 - Zona Admin|');
+console.log(opt);
 
 
-switch (1) {
+switch (opt) {
 
-    case 1:
+    case '1':
         
-        switch (1) {
-            case 1:
+        let opt2 = readline.question('|1 - Depositar Vehículo|')
+
+        switch (opt2) {
+            case '1':
                 console.log(User.imprimirPlazasDisponibles(parking))
                 break;
-            case 2:
+            case '2':
 
                 break;
-            case 3:
+            case '3':
 
                 break;
-            case 4:
+            case '4':
 
                 break;
         }
 
         break;
-    case 2:
+    case '2':
 
         break;
 }
 
-
-}
 
 main();

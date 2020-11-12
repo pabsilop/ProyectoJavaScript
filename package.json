@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Proyecto JavaScript vehiculos",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pabsilop/ProyectoJavaScript/issues"
   },
-  "homepage": "https://github.com/pabsilop/ProyectoJavaScript#readme"
+  "homepage": "https://github.com/pabsilop/ProyectoJavaScript#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

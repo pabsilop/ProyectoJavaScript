@@ -1,4 +1,4 @@
-class Ticket{
+export class Ticket{
     constructor(matricula, fecha, pin,idPlaza){
         this.matricula=matricula;
         this.fecha=fecha;
@@ -8,5 +8,5 @@ class Ticket{
     toString(){
         return `Matrícula del vehículo: ${this.matricula} || Fecha de entrada: ${this.fecha} || Pin: ${this.pin} || Número de plaza: ${this.idPlaza}`; 
     }
-}module.exports = Ticket;
+}
  

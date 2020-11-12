@@ -1,6 +1,6 @@
-const Plaza = require('../modelos/plaza');
-const tipoVehiculo = require('../modelos/tipoVehiculo');
-const Parking = require('../modelos/parking');
+import {Plaza} from '../modelos/plaza.js';
+import {tipoVehiculo} from '../modelos/tipoVehiculo.js';
+import {Parking} from '../modelos/parking.js'
 
 let datos = [];
 let numPlazas=45;
@@ -32,4 +32,4 @@ function createParking(){
     return  new Parking(datos,numPlazas);
 }
 
-module.exports = {createParking : createParking};
+export {createParking};
